@@ -11,7 +11,7 @@ import seaborn as sns
 from sklearn.datasets import load_breast_cancer
 cancer_data = load_breast_cancer()
 raw_data = pd.DataFrame(cancer_data['data'], columns = cancer_data['feature_names'])
-# print(raw_data['DESCR'])
+# print(cancer_data['DESCR'])
 
 #Split the data set into training data and test data
 x = raw_data
