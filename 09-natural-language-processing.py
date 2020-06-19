@@ -53,7 +53,6 @@ preprocessor(sample_message)
 
 #Vectorizing the data set
 from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import CountVectorizer
 bag_of_words_builder = CountVectorizer(analyzer = preprocessor).fit(data_frame['message'])
 len(bag_of_words_builder.vocabulary_)
 
